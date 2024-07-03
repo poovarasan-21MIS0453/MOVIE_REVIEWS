@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute space between items */
+  background-color: #fff; /* White background for the navbar */
+  padding: 10px 20px; /* Adjusted padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow to navbar */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  width: 50%; /* Left half of the navbar */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between logo and nav links */
+}
+
+.logo-image {
+  height: 60px; /* Increased height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Adjust gap between links */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #000; /* Nav links color black */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between search bar and filter link */
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-bar {
+  padding: 10px 20px; /* Space for the button inside */
+  font-size: 16px;
+  border: 1px solid #000; /* Border color black */
+  border-radius: 25px; /* Rounded corners */
+  background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent black */
+  color: #000; /* Text color black */
+  outline: none; /* Remove default outline */
+  width: 200px; /* Fixed width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.search-bar::placeholder {
+  color: #555; /* Placeholder text color */
+}
+
+.search-button {
+  position: absolute;
+  right: 10px; /* Adjust the position of the button inside the search bar */
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #000; /* Icon color black */
+  font-size: 18px; /* Icon size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.filter-link {
+  display: flex;
+  align-items: center;
+  color: #000; /* Filter link color black */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.filter-link i {
+  font-size: 18px; /* Adjust icon size if necessary */
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.filter-link:hover {
+  color: #333; /* Darker color on hover */
+}
+
+.login-button {
+  background-color: #000; /* Black background for button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* Remove underline from link */
+  display: inline-flex;
+  align-items: center;
+}
+
+.login-button:hover {
+  background-color: #333; /* Darker background on hover */
+}
