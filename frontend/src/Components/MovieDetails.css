@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Lighter background */
+  color: #495057; /* Darker text color for better contrast */
+}
+
+/* Movie Details Page Layout */
+.movie-details-page {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Match body background */
+}
+
+.movie-details-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the start vertically */
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto; /* Center horizontally with margin */
+  background-color: #fff; /* White background */
+  border-radius: 20px; /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.movie-details-container img {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s;
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.movie-details {
+  flex: 1; /* Take remaining space */
+  margin-left: 20px; /* Space between image and details */
+}
+
+
+.movie-details-container img:hover {
+  transform: scale(1.05); /* Enlarge on hover */
+}
+
+/* Movie Details Content */
+.movie-details {
+  text-align: center; /* Center text */
+  font-weight: 600;
+  color: #343a40; /* Darker text color */
+  font-size: 18px; /* Adjusted font size */
+}
+
+/* Movie Title */
+.movie-details h1 {
+  margin-bottom: 10px;
+  font-size: 36px; /* Adjusted font size */
+  color: #007bff; /* Blue color */
+}
+
+/* Movie Details Paragraph */
+.movie-details p {
+  margin: 8px 0; /* Adjusted margin */
+  font-size: 16px; /* Adjusted font size */
+}
+
+/* Review Button Styling */
+.movie-details button {
+  margin-top: 20px;
+  padding: 12px 24px; /* Larger padding */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  background-color: chocolate; /* Blue background */
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.movie-details button:hover {
+   
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Review Form Styling */
+.review-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: auto;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border: 2px solid #000; /* Black border */
+}
+
+.review-form.active {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 20px;
+
+}
+
+.review-form h2 {
+  margin-bottom: 20px; /* Adjusted margin */
+  font-size: 28px; /* Larger font size */
+  color: #007bff; /* Blue color */
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 10px; /* Adjusted margin */
+  font-weight: bold;
+  color: #495057; /* Darker text color */
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px; /* Adjusted margin */
+  border: 1px solid #ced4da; /* Lighter border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px;
+}
+
+
+
+.review-form button:first-of-type {
+  margin-right: 10px;
+}
+
+
+
+
