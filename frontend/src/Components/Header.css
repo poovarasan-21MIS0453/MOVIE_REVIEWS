@@ -1,0 +1,129 @@
+/* Header.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke; /* Light background color */
+  color: black; /* Black text color */
+  padding: 10px 20px;
+  height: 60px; /* Adjust height as needed */
+}
+
+/* Left section (logo and title) */
+.navbar .left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .left h1 {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .left h1 img.logo {
+  width: 50px; /* Adjust logo size */
+  height: auto;
+  margin-right: 10px; /* Space between logo and text */
+  border-radius: 10px;
+}
+
+.navbar .left h1 a {
+  color: black; /* Black text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem; /* Adjust font size */
+}
+
+/* Right section (navigation links and buttons) */
+.navbar .right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .right .nav-items {
+  list-style-type: none; /* Remove bullet points */
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push items to the right */
+}
+
+.navbar .right .nav-items li {
+  margin-left: 20px; /* Space between navigation items */
+}
+
+.navbar .right .nav-items li a,
+.navbar .right .nav-items li button {
+  color: black; /* Black text color */
+  text-decoration: none; /* Remove underline */
+  background: none; /* Transparent background */
+  border: none; /* Remove border */
+  cursor: pointer;
+  font-size: 1rem; /* Adjust font size */
+  padding: 10px; /* Adjust padding */
+  transition: opacity 0.2s ease-in-out; /* Smooth opacity transition */
+}
+
+.navbar .right .nav-items li a:hover,
+.navbar .right .nav-items li button:hover {
+  background-color: black; /* Change background color on hover */
+  border-radius: 5px;
+  color: gold; /* Change text color on hover */
+  transition: 0.3s;
+}
+
+/* Dropdown menu */
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropbtn {
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1rem;
+ 
+}
+
+.navbar .dropbtn:hover {
+  background-color:chocolate;
+  border-radius: 5px;
+  
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+
+}
+
+.navbar .dropdown-content a:hover {
+  background-color:chocolate;
+  
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
